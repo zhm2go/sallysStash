@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1582257147433" clover="4.3.1">
+   <project name="hz202-hwk2-651" timestamp="1582257146705">
+      <metrics coveredelements="1035" complexity="309" loc="1113" methods="46" classes="6" statements="673" packages="1" coveredconditionals="329" coveredmethods="45" elements="1059" ncloc="1009" files="6" conditionals="340" coveredstatements="661"/>
+      <package name="hz202.hwk2">
+         <metrics coveredelements="1035" complexity="309" loc="1113" methods="46" classes="6" statements="673" coveredconditionals="329" coveredmethods="45" elements="1059" ncloc="1009" files="6" conditionals="340" coveredstatements="661"/>
+         <file path="/home/zhm2go/hz202-hwk2-651/src/main/java/hz202/hwk2/block.java" name="block.java">
+            <metrics coveredelements="32" coveredconditionals="0" complexity="12" loc="69" coveredmethods="12" methods="12" elements="32" classes="1" ncloc="55" statements="20" conditionals="0" coveredstatements="20"/>
+            <class name="block">
+               <metrics coveredelements="32" coveredconditionals="0" complexity="12" coveredmethods="12" methods="12" elements="32" statements="20" conditionals="0" coveredstatements="20"/>
+            </class>
+            <line complexity="1" visibility="public" signature="block()" num="13" count="3200" type="method"/>
+            <line num="15" count="3200" type="stmt"/>
+            <line num="16" count="3200" type="stmt"/>
+            <line num="17" count="3200" type="stmt"/>
+            <line num="18" count="3200" type="stmt"/>
+            <line num="19" count="3200" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getOccupiedState() : boolean" num="24" count="270800" type="method"/>
+            <line num="25" count="270800" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getMissState() : boolean" num="27" count="49791" type="method"/>
+            <line num="28" count="49791" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getHitState() : boolean" num="30" count="64361" type="method"/>
+            <line num="31" count="64361" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getDigState() : boolean" num="34" count="53000" type="method"/>
+            <line num="35" count="53000" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getColor() : char" num="38" count="10549" type="method"/>
+            <line num="39" count="10549" type="stmt"/>
+            <line complexity="1" visibility="public" signature="setMaster(stash) : void" num="42" count="456" type="method"/>
+            <line num="43" count="456" type="stmt"/>
+            <line num="44" count="456" type="stmt"/>
+            <line num="45" count="456" type="stmt"/>
+            <line complexity="1" visibility="public" signature="rmMaster() : void" num="48" count="32" type="method"/>
+            <line num="49" count="32" type="stmt"/>
+            <line num="50" count="32" type="stmt"/>
+            <line num="51" count="32" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getMaster() : stash" num="54" count="293" type="method"/>
+            <line num="55" count="293" type="stmt"/>
+            <line complexity="1" visibility="public" signature="setHitState(boolean) : void" num="58" count="385" type="method"/>
+            <line num="59" count="385" type="stmt"/>
+            <line complexity="1" visibility="public" signature="setDigState(boolean) : void" num="62" count="4391" type="method"/>
+            <line num="63" count="4391" type="stmt"/>
+            <line complexity="1" visibility="public" signature="setMissState(boolean) : void" num="66" count="4391" type="method"/>
+            <line num="67" count="4391" type="stmt"/>
+         </file>
+         <file path="/home/zhm2go/hz202-hwk2-651/src/main/java/hz202/hwk2/stash.java" name="stash.java">
+            <metrics coveredelements="18" coveredconditionals="0" complexity="7" loc="41" coveredmethods="7" methods="7" elements="18" classes="1" ncloc="32" statements="11" conditionals="0" coveredstatements="11"/>
+            <class name="stash">
+               <metrics coveredelements="18" coveredconditionals="0" complexity="7" coveredmethods="7" methods="7" elements="18" statements="11" conditionals="0" coveredstatements="11"/>
+            </class>
+            <line complexity="1" visibility="public" signature="stash(int,char)" num="10" count="114" type="method"/>
+            <line num="11" count="114" type="stmt"/>
+            <line num="12" count="114" type="stmt"/>
+            <line num="13" count="114" type="stmt"/>
+            <line complexity="1" visibility="public" signature="addBlock(block) : void" num="16" count="452" type="method"/>
+            <line num="17" count="452" type="stmt"/>
+            <line num="18" count="452" type="stmt"/>
+            <line complexity="1" visibility="public" signature="setBlock(int,block) : void" num="21" count="4" type="method"/>
+            <line num="22" count="4" type="stmt"/>
+            <line num="23" count="4" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getBlocks() : ArrayList&lt;block&gt;" num="26" count="86" type="method"/>
+            <line num="27" count="86" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getColor() : char" num="30" count="763" type="method"/>
+            <line num="31" count="763" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getNum() : int" num="34" count="19" type="method"/>
+            <line num="35" count="19" type="stmt"/>
+            <line complexity="1" visibility="public" signature="clearBlocks() : void" num="38" count="5" type="method"/>
+            <line num="39" count="5" type="stmt"/>
+         </file>
+         <file path="/home/zhm2go/hz202-hwk2-651/src/main/java/hz202/hwk2/App.java" name="App.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="1" loc="19" coveredmethods="0" methods="1" elements="3" classes="1" ncloc="8" statements="2" conditionals="0" coveredstatements="0"/>
+            <class name="App">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="1" coveredmethods="0" methods="1" elements="3" statements="2" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="13" count="0" type="method"/>
+            <line num="14" count="0" type="stmt"/>
+            <line num="15" count="0" type="stmt"/>
+         </file>
+         <file path="/home/zhm2go/hz202-hwk2-651/src/main/java/hz202/hwk2/sallysStash.java" name="sallysStash.java">
+            <metrics coveredelements="308" coveredconditionals="70" complexity="63" loc="345" coveredmethods="12" methods="12" elements="315" classes="1" ncloc="314" statements="229" conditionals="74" coveredstatements="226"/>
+            <class name="sallysStash">
+               <metrics coveredelements="308" coveredconditionals="70" complexity="63" coveredmethods="12" methods="12" elements="315" statements="229" conditionals="74" coveredstatements="226"/>
+            </class>
+            <line complexity="1" visibility="public" signature="sallysStash()" num="20" count="5" type="method"/>
+            <line complexity="1" visibility="package" signature="&lt;init&gt;, line 21()" num="21" count="5" type="method"/>
+            <line num="21" count="5" type="stmt"/>
+            <line num="22" count="5" type="stmt"/>
+            <line num="23" count="5" type="stmt"/>
+            <line num="24" count="5" type="stmt"/>
+            <line num="25" count="5" type="stmt"/>
+            <line num="26" count="5" type="stmt"/>
+            <line num="27" count="5" type="stmt"/>
+            <line num="28" count="5" type="stmt"/>
+            <line num="29" count="5" type="stmt"/>
+            <line num="30" count="5" type="stmt"/>
+            <line num="31" count="5" type="stmt"/>
+            <line num="32" count="5" type="stmt"/>
+            <line num="34" count="5" type="stmt"/>
+            <line num="35" count="5" type="stmt"/>
+            <line num="36" count="5" type="stmt"/>
+            <line num="37" count="5" type="stmt"/>
+            <line num="38" count="5" type="stmt"/>
+            <line num="39" count="5" type="stmt"/>
+            <line num="40" count="5" type="stmt"/>
+            <line num="41" count="5" type="stmt"/>
+            <line num="42" count="5" type="stmt"/>
+            <line num="43" count="5" type="stmt"/>
+            <line complexity="5" visibility="public" signature="playerPlacement(Scanner,String,String,checkerBoard,checkerBoard) : checkerBoard" num="46" count="4" type="method"/>
+            <line num="47" count="4" type="stmt"/>
+            <line num="48" count="4" type="stmt"/>
+            <line num="49" count="4" type="stmt"/>
+            <line num="50" count="4" type="stmt"/>
+            <line num="51" count="4" type="stmt"/>
+            <line falsecount="4" truecount="44" num="51" type="cond"/>
+            <line num="52" count="44" type="stmt"/>
+            <line num="53" count="44" type="stmt"/>
+            <line num="54" count="44" type="stmt"/>
+            <line num="55" count="44" type="stmt"/>
+            <line num="56" count="44" type="stmt"/>
+            <line num="57" count="44" type="stmt"/>
+            <line num="58" count="44" type="stmt"/>
+            <line num="59" count="44" type="stmt"/>
+            <line falsecount="24" truecount="20" num="59" type="cond"/>
+            <line num="60" count="20" type="stmt"/>
+            <line num="61" count="20" type="stmt"/>
+            <line falsecount="20" truecount="13" num="61" type="cond"/>
+            <line num="62" count="13" type="stmt"/>
+            <line num="65" count="24" type="stmt"/>
+            <line num="66" count="24" type="stmt"/>
+            <line falsecount="24" truecount="23" num="66" type="cond"/>
+            <line num="67" count="23" type="stmt"/>
+            <line num="71" count="4" type="stmt"/>
+            <line num="72" count="4" type="stmt"/>
+            <line num="73" count="4" type="stmt"/>
+            <line num="74" count="4" type="stmt"/>
+            <line num="75" count="4" type="stmt"/>
+            <line num="76" count="4" type="stmt"/>
+            <line num="77" count="4" type="stmt"/>
+            <line complexity="1" visibility="public" signature="playerHit(Scanner,String,String,checkerBoard,checkerBoard) : boolean" num="80" count="177" type="method"/>
+            <line num="81" count="177" type="stmt"/>
+            <line num="82" count="177" type="stmt"/>
+            <line num="83" count="177" type="stmt"/>
+            <line num="84" count="177" type="stmt"/>
+            <line num="85" count="177" type="stmt"/>
+            <line num="86" count="177" type="stmt"/>
+            <line num="87" count="177" type="stmt"/>
+            <line num="88" count="177" type="stmt"/>
+            <line complexity="9" visibility="public" signature="playerAct(String,int,int) : boolean" num="91" count="240" type="method"/>
+            <line num="92" count="240" type="stmt"/>
+            <line falsecount="218" truecount="22" num="92" type="cond"/>
+            <line num="93" count="22" type="stmt"/>
+            <line num="94" count="22" type="stmt"/>
+            <line num="96" count="218" type="stmt"/>
+            <line falsecount="217" truecount="1" num="96" type="cond"/>
+            <line num="97" count="1" type="stmt"/>
+            <line num="98" count="1" type="stmt"/>
+            <line num="101" count="217" type="stmt"/>
+            <line falsecount="217" truecount="0" num="101" type="cond"/>
+            <line num="102" count="0" type="stmt"/>
+            <line num="103" count="0" type="stmt"/>
+            <line num="105" count="217" type="stmt"/>
+            <line complexity="1" visibility="public" signature="playerMove(Scanner,String,String,checkerBoard,checkerBoard) : boolean" num="108" count="28" type="method"/>
+            <line num="109" count="28" type="stmt"/>
+            <line num="110" count="28" type="stmt"/>
+            <line num="111" count="28" type="stmt"/>
+            <line num="112" count="28" type="stmt"/>
+            <line num="113" count="28" type="stmt"/>
+            <line num="114" count="28" type="stmt"/>
+            <line num="115" count="28" type="stmt"/>
+            <line num="116" count="28" type="stmt"/>
+            <line complexity="1" visibility="public" signature="playerSonar(Scanner,String,String,checkerBoard,checkerBoard) : boolean" num="119" count="12" type="method"/>
+            <line num="120" count="12" type="stmt"/>
+            <line num="121" count="12" type="stmt"/>
+            <line num="122" count="12" type="stmt"/>
+            <line num="123" count="12" type="stmt"/>
+            <line num="124" count="12" type="stmt"/>
+            <line num="125" count="12" type="stmt"/>
+            <line num="126" count="12" type="stmt"/>
+            <line num="127" count="12" type="stmt"/>
+            <line complexity="5" visibility="public" signature="checkOver(checkerBoard) : boolean" num="130" count="5185" type="method"/>
+            <line num="131" count="5185" type="stmt"/>
+            <line num="132" count="5185" type="stmt"/>
+            <line falsecount="5" truecount="356072" num="132" type="cond"/>
+            <line num="133" count="356072" type="stmt"/>
+            <line num="134" count="356072" type="stmt"/>
+            <line falsecount="350892" truecount="162551" num="134" type="cond"/>
+            <line num="135" count="162551" type="stmt"/>
+            <line num="136" count="162551" type="stmt"/>
+            <line falsecount="157371" truecount="5180" num="136" type="cond"/>
+            <line num="137" count="5180" type="stmt"/>
+            <line num="141" count="5" type="stmt"/>
+            <line complexity="6" visibility="public" signature="checkMode(String) : boolean" num="144" count="9" type="method"/>
+            <line num="145" count="9" type="stmt"/>
+            <line falsecount="7" truecount="2" num="145" type="cond"/>
+            <line num="146" count="2" type="stmt"/>
+            <line num="147" count="2" type="stmt"/>
+            <line num="149" count="7" type="stmt"/>
+            <line falsecount="5" truecount="2" num="149" type="cond"/>
+            <line num="150" count="2" type="stmt"/>
+            <line num="151" count="2" type="stmt"/>
+            <line num="153" count="5" type="stmt"/>
+            <line complexity="3" visibility="public" signature="computerPlace() : checkerBoard" num="156" count="6" type="method"/>
+            <line num="157" count="6" type="stmt"/>
+            <line num="159" count="6" type="stmt"/>
+            <line num="160" count="6" type="stmt"/>
+            <line num="161" count="6" type="stmt"/>
+            <line num="162" count="6" type="stmt"/>
+            <line falsecount="6" truecount="66" num="162" type="cond"/>
+            <line num="163" count="66" type="stmt"/>
+            <line falsecount="36" truecount="30" num="163" type="cond"/>
+            <line num="165" count="30" type="stmt"/>
+            <line num="168" count="36" type="stmt"/>
+            <line num="171" count="6" type="stmt"/>
+            <line complexity="2" visibility="public" signature="computerAct(checkerBoard,checkerBoard,int,char,String) : void" num="174" count="5000" type="method"/>
+            <line num="176" count="5000" type="stmt"/>
+            <line falsecount="4997" truecount="3" num="176" type="cond"/>
+            <line num="177" count="3" type="stmt"/>
+            <line num="178" count="3" type="stmt"/>
+            <line num="179" count="3" type="stmt"/>
+            <line num="180" count="3" type="stmt"/>
+            <line num="181" count="3" type="stmt"/>
+            <line num="182" count="3" type="stmt"/>
+            <line num="184" count="4997" type="stmt"/>
+            <line num="185" count="4997" type="stmt"/>
+            <line num="188" count="4997" type="stmt"/>
+            <line num="189" count="4997" type="stmt"/>
+            <line num="190" count="4997" type="stmt"/>
+            <line num="191" count="4997" type="stmt"/>
+            <line num="192" count="4997" type="stmt"/>
+            <line num="193" count="4997" type="stmt"/>
+            <line num="194" count="4997" type="stmt"/>
+            <line num="195" count="4997" type="stmt"/>
+            <line num="196" count="4997" type="stmt"/>
+            <line num="197" count="4997" type="stmt"/>
+            <line complexity="28" visibility="public" signature="startGame() : void" num="201" count="5" type="method"/>
+            <line num="202" count="5" type="stmt"/>
+            <line num="203" count="5" type="stmt"/>
+            <line num="204" count="5" type="stmt"/>
+            <line num="205" count="5" type="stmt"/>
+            <line num="207" count="5" type="stmt"/>
+            <line num="208" count="5" type="stmt"/>
+            <line num="209" count="5" type="stmt"/>
+            <line falsecount="5" truecount="9" num="209" type="cond"/>
+            <line num="210" count="9" type="stmt"/>
+            <line num="211" count="9" type="stmt"/>
+            <line num="212" count="9" type="stmt"/>
+            <line num="214" count="5" type="stmt"/>
+            <line falsecount="3" truecount="2" num="214" type="cond"/>
+            <line num="215" count="2" type="stmt"/>
+            <line num="219" count="3" type="stmt"/>
+            <line num="222" count="5" type="stmt"/>
+            <line falsecount="3" truecount="2" num="222" type="cond"/>
+            <line num="223" count="2" type="stmt"/>
+            <line num="224" count="2" type="stmt"/>
+            <line num="225" count="2" type="stmt"/>
+            <line num="227" count="2" type="stmt"/>
+            <line num="228" count="2" type="stmt"/>
+            <line num="231" count="3" type="stmt"/>
+            <line num="233" count="5" type="stmt"/>
+            <line num="234" count="5" type="stmt"/>
+            <line num="236" count="5" type="stmt"/>
+            <line num="237" count="5" type="stmt"/>
+            <line num="238" count="5" type="stmt"/>
+            <line num="239" count="5" type="stmt"/>
+            <line num="240" count="5" type="stmt"/>
+            <line num="241" count="5" type="stmt"/>
+            <line num="242" count="5" type="stmt"/>
+            <line num="243" count="5" type="stmt"/>
+            <line falsecount="0" truecount="2594" num="243" type="cond"/>
+            <line num="245" count="2594" type="stmt"/>
+            <line falsecount="2501" truecount="93" num="245" type="cond"/>
+            <line num="246" count="93" type="stmt"/>
+            <line num="247" count="93" type="stmt"/>
+            <line num="248" count="93" type="stmt"/>
+            <line num="249" count="93" type="stmt"/>
+            <line falsecount="93" truecount="106" num="249" type="cond"/>
+            <line num="250" count="106" type="stmt"/>
+            <line num="251" count="106" type="stmt"/>
+            <line num="252" count="106" type="stmt"/>
+            <line num="253" count="106" type="stmt"/>
+            <line num="254" count="106" type="stmt"/>
+            <line num="255" count="106" type="stmt"/>
+            <line num="256" count="106" type="stmt"/>
+            <line num="257" count="106" type="stmt"/>
+            <line num="258" count="106" type="stmt"/>
+            <line num="259" count="106" type="stmt"/>
+            <line num="260" count="106" type="stmt"/>
+            <line num="261" count="106" type="stmt"/>
+            <line falsecount="98" truecount="8" num="261" type="cond"/>
+            <line num="262" count="8" type="stmt"/>
+            <line num="264" count="98" type="stmt"/>
+            <line falsecount="9" truecount="89" num="264" type="cond"/>
+            <line num="265" count="89" type="stmt"/>
+            <line num="266" count="89" type="stmt"/>
+            <line num="268" count="9" type="stmt"/>
+            <line falsecount="8" truecount="1" num="268" type="cond"/>
+            <line num="269" count="1" type="stmt"/>
+            <line num="270" count="1" type="stmt"/>
+            <line falsecount="0" truecount="1" num="270" type="cond"/>
+            <line num="271" count="1" type="stmt"/>
+            <line num="273" count="0" type="stmt"/>
+            <line num="275" count="8" type="stmt"/>
+            <line falsecount="0" truecount="8" num="275" type="cond"/>
+            <line num="276" count="8" type="stmt"/>
+            <line num="277" count="8" type="stmt"/>
+            <line falsecount="5" truecount="3" num="277" type="cond"/>
+            <line num="278" count="3" type="stmt"/>
+            <line num="280" count="5" type="stmt"/>
+            <line num="285" count="2501" type="stmt"/>
+            <line num="286" count="2501" type="stmt"/>
+            <line num="288" count="2594" type="stmt"/>
+            <line num="289" count="2594" type="stmt"/>
+            <line falsecount="2591" truecount="3" num="289" type="cond"/>
+            <line num="290" count="3" type="stmt"/>
+            <line num="291" count="3" type="stmt"/>
+            <line num="294" count="2591" type="stmt"/>
+            <line falsecount="2499" truecount="92" num="294" type="cond"/>
+            <line num="295" count="92" type="stmt"/>
+            <line num="296" count="92" type="stmt"/>
+            <line num="297" count="92" type="stmt"/>
+            <line num="298" count="92" type="stmt"/>
+            <line falsecount="92" truecount="134" num="298" type="cond"/>
+            <line num="299" count="134" type="stmt"/>
+            <line num="300" count="134" type="stmt"/>
+            <line num="301" count="134" type="stmt"/>
+            <line num="302" count="134" type="stmt"/>
+            <line num="303" count="134" type="stmt"/>
+            <line num="304" count="134" type="stmt"/>
+            <line num="305" count="134" type="stmt"/>
+            <line num="306" count="134" type="stmt"/>
+            <line num="307" count="134" type="stmt"/>
+            <line num="308" count="134" type="stmt"/>
+            <line num="309" count="134" type="stmt"/>
+            <line num="310" count="134" type="stmt"/>
+            <line falsecount="119" truecount="15" num="310" type="cond"/>
+            <line num="311" count="15" type="stmt"/>
+            <line num="313" count="119" type="stmt"/>
+            <line falsecount="31" truecount="88" num="313" type="cond"/>
+            <line num="314" count="88" type="stmt"/>
+            <line num="315" count="88" type="stmt"/>
+            <line num="317" count="31" type="stmt"/>
+            <line falsecount="4" truecount="27" num="317" type="cond"/>
+            <line num="318" count="27" type="stmt"/>
+            <line num="319" count="27" type="stmt"/>
+            <line falsecount="3" truecount="24" num="319" type="cond"/>
+            <line num="320" count="24" type="stmt"/>
+            <line num="322" count="3" type="stmt"/>
+            <line num="324" count="7" type="stmt"/>
+            <line falsecount="3" truecount="4" num="324" type="cond"/>
+            <line num="325" count="4" type="stmt"/>
+            <line num="326" count="4" type="stmt"/>
+            <line falsecount="3" truecount="1" num="326" type="cond"/>
+            <line num="327" count="1" type="stmt"/>
+            <line num="329" count="3" type="stmt"/>
+            <line num="334" count="2499" type="stmt"/>
+            <line num="335" count="2499" type="stmt"/>
+            <line num="337" count="2591" type="stmt"/>
+            <line num="338" count="2591" type="stmt"/>
+            <line falsecount="2589" truecount="2" num="338" type="cond"/>
+            <line num="339" count="2" type="stmt"/>
+            <line num="340" count="2" type="stmt"/>
+         </file>
+         <file path="/home/zhm2go/hz202-hwk2-651/src/main/java/hz202/hwk2/checkerBoard.java" name="checkerBoard.java">
+            <metrics coveredelements="656" coveredconditionals="259" complexity="225" loc="602" coveredmethods="13" methods="13" elements="670" classes="1" ncloc="573" statements="391" conditionals="266" coveredstatements="384"/>
+            <class name="checkerBoard">
+               <metrics coveredelements="656" coveredconditionals="259" complexity="225" coveredmethods="13" methods="13" elements="670" statements="391" conditionals="266" coveredstatements="384"/>
+            </class>
+            <line complexity="4" visibility="public" signature="checkerBoard()" num="15" count="16" type="method"/>
+            <line num="16" count="16" type="stmt"/>
+            <line num="17" count="16" type="stmt"/>
+            <line num="18" count="16" type="stmt"/>
+            <line falsecount="16" truecount="1360" num="18" type="cond"/>
+            <line num="19" count="1360" type="stmt"/>
+            <line num="21" count="16" type="stmt"/>
+            <line falsecount="16" truecount="320" num="21" type="cond"/>
+            <line num="23" count="320" type="stmt"/>
+            <line num="24" count="320" type="stmt"/>
+            <line falsecount="320" truecount="3200" num="24" type="cond"/>
+            <line num="25" count="3200" type="stmt"/>
+            <line num="28" count="320" type="stmt"/>
+            <line num="30" count="16" type="stmt"/>
+            <line num="31" count="16" type="stmt"/>
+            <line num="32" count="16" type="stmt"/>
+            <line num="33" count="16" type="stmt"/>
+            <line num="34" count="16" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getAllBlocks() : ArrayList&lt;ArrayList&lt;block&gt;&gt;" num="37" count="72321" type="method"/>
+            <line num="38" count="72321" type="stmt"/>
+            <line complexity="21" visibility="public" signature="getPlaceCmd(Scanner,int,char) : boolean" num="41" count="63" type="method"/>
+            <line num="42" count="63" type="stmt"/>
+            <line num="43" count="63" type="stmt"/>
+            <line falsecount="61" truecount="2" num="43" type="cond"/>
+            <line num="44" count="2" type="stmt"/>
+            <line num="45" count="2" type="stmt"/>
+            <line num="47" count="61" type="stmt"/>
+            <line falsecount="59" truecount="2" num="47" type="cond"/>
+            <line num="48" count="2" type="stmt"/>
+            <line num="49" count="2" type="stmt"/>
+            <line num="51" count="59" type="stmt"/>
+            <line num="53" count="59" type="stmt"/>
+            <line falsecount="58" truecount="1" num="53" type="cond"/>
+            <line num="54" count="1" type="stmt"/>
+            <line num="55" count="1" type="stmt"/>
+            <line num="57" count="58" type="stmt"/>
+            <line falsecount="56" truecount="2" num="57" type="cond"/>
+            <line num="58" count="2" type="stmt"/>
+            <line num="59" count="2" type="stmt"/>
+            <line num="61" count="56" type="stmt"/>
+            <line falsecount="54" truecount="2" num="61" type="cond"/>
+            <line num="62" count="2" type="stmt"/>
+            <line num="63" count="2" type="stmt"/>
+            <line num="65" count="54" type="stmt"/>
+            <line num="66" count="54" type="stmt"/>
+            <line falsecount="52" truecount="2" num="66" type="cond"/>
+            <line num="67" count="2" type="stmt"/>
+            <line num="68" count="2" type="stmt"/>
+            <line num="70" count="52" type="stmt"/>
+            <line falsecount="50" truecount="134" num="70" type="cond"/>
+            <line num="71" count="134" type="stmt"/>
+            <line falsecount="46" truecount="88" num="71" type="cond"/>
+            <line num="72" count="88" type="stmt"/>
+            <line falsecount="87" truecount="1" num="72" type="cond"/>
+            <line num="73" count="1" type="stmt"/>
+            <line num="74" count="1" type="stmt"/>
+            <line num="77" count="133" type="stmt"/>
+            <line falsecount="87" truecount="46" num="77" type="cond"/>
+            <line num="78" count="46" type="stmt"/>
+            <line falsecount="45" truecount="1" num="78" type="cond"/>
+            <line num="79" count="1" type="stmt"/>
+            <line num="80" count="1" type="stmt"/>
+            <line num="84" count="50" type="stmt"/>
+            <line num="85" count="50" type="stmt"/>
+            <line falsecount="50" truecount="130" num="85" type="cond"/>
+            <line num="86" count="130" type="stmt"/>
+            <line falsecount="44" truecount="86" num="86" type="cond"/>
+            <line num="87" count="86" type="stmt"/>
+            <line num="90" count="130" type="stmt"/>
+            <line falsecount="86" truecount="44" num="90" type="cond"/>
+            <line num="91" count="44" type="stmt"/>
+            <line num="95" count="50" type="stmt"/>
+            <line num="96" count="50" type="stmt"/>
+            <line complexity="28" visibility="public" signature="checkBoundary(char,String) : boolean" num="99" count="84" type="method"/>
+            <line num="100" count="84" type="stmt"/>
+            <line falsecount="45" truecount="39" num="100" type="cond"/>
+            <line num="101" count="39" type="stmt"/>
+            <line falsecount="27" truecount="12" num="101" type="cond"/>
+            <line num="102" count="12" type="stmt"/>
+            <line falsecount="11" truecount="1" num="102" type="cond"/>
+            <line num="103" count="1" type="stmt"/>
+            <line num="105" count="11" type="stmt"/>
+            <line falsecount="10" truecount="1" num="105" type="cond"/>
+            <line num="106" count="1" type="stmt"/>
+            <line num="109" count="37" type="stmt"/>
+            <line falsecount="24" truecount="13" num="109" type="cond"/>
+            <line num="110" count="13" type="stmt"/>
+            <line falsecount="12" truecount="1" num="110" type="cond"/>
+            <line num="111" count="1" type="stmt"/>
+            <line num="113" count="12" type="stmt"/>
+            <line falsecount="11" truecount="1" num="113" type="cond"/>
+            <line num="114" count="1" type="stmt"/>
+            <line num="117" count="35" type="stmt"/>
+            <line falsecount="25" truecount="10" num="117" type="cond"/>
+            <line num="118" count="10" type="stmt"/>
+            <line falsecount="9" truecount="1" num="118" type="cond"/>
+            <line num="119" count="1" type="stmt"/>
+            <line num="121" count="9" type="stmt"/>
+            <line falsecount="8" truecount="1" num="121" type="cond"/>
+            <line num="122" count="1" type="stmt"/>
+            <line num="125" count="33" type="stmt"/>
+            <line falsecount="29" truecount="4" num="125" type="cond"/>
+            <line num="126" count="4" type="stmt"/>
+            <line falsecount="3" truecount="1" num="126" type="cond"/>
+            <line num="127" count="1" type="stmt"/>
+            <line num="129" count="3" type="stmt"/>
+            <line falsecount="2" truecount="1" num="129" type="cond"/>
+            <line num="130" count="1" type="stmt"/>
+            <line num="134" count="76" type="stmt"/>
+            <line falsecount="31" truecount="45" num="134" type="cond"/>
+            <line num="135" count="45" type="stmt"/>
+            <line falsecount="31" truecount="14" num="135" type="cond"/>
+            <line num="136" count="14" type="stmt"/>
+            <line falsecount="13" truecount="1" num="136" type="cond"/>
+            <line num="137" count="1" type="stmt"/>
+            <line num="139" count="13" type="stmt"/>
+            <line falsecount="12" truecount="1" num="139" type="cond"/>
+            <line num="140" count="1" type="stmt"/>
+            <line num="143" count="43" type="stmt"/>
+            <line falsecount="30" truecount="13" num="143" type="cond"/>
+            <line num="144" count="13" type="stmt"/>
+            <line falsecount="12" truecount="1" num="144" type="cond"/>
+            <line num="145" count="1" type="stmt"/>
+            <line num="147" count="12" type="stmt"/>
+            <line falsecount="10" truecount="2" num="147" type="cond"/>
+            <line num="148" count="2" type="stmt"/>
+            <line num="151" count="40" type="stmt"/>
+            <line falsecount="33" truecount="7" num="151" type="cond"/>
+            <line num="152" count="7" type="stmt"/>
+            <line falsecount="6" truecount="1" num="152" type="cond"/>
+            <line num="153" count="1" type="stmt"/>
+            <line num="155" count="6" type="stmt"/>
+            <line falsecount="5" truecount="1" num="155" type="cond"/>
+            <line num="156" count="1" type="stmt"/>
+            <line num="159" count="38" type="stmt"/>
+            <line falsecount="27" truecount="11" num="159" type="cond"/>
+            <line num="160" count="11" type="stmt"/>
+            <line falsecount="9" truecount="2" num="160" type="cond"/>
+            <line num="161" count="2" type="stmt"/>
+            <line num="163" count="9" type="stmt"/>
+            <line falsecount="8" truecount="1" num="163" type="cond"/>
+            <line num="164" count="1" type="stmt"/>
+            <line num="168" count="66" type="stmt"/>
+            <line complexity="51" visibility="public" signature="checkOverlap(char,String) : boolean" num="171" count="66" type="method"/>
+            <line num="172" count="66" type="stmt"/>
+            <line num="173" count="66" type="stmt"/>
+            <line num="174" count="66" type="stmt"/>
+            <line falsecount="35" truecount="31" num="174" type="cond"/>
+            <line num="175" count="31" type="stmt"/>
+            <line falsecount="21" truecount="10" num="175" type="cond"/>
+            <line num="176" count="10" type="stmt"/>
+            <line falsecount="10" truecount="0" num="176" type="cond"/>
+            <line num="177" count="0" type="stmt"/>
+            <line num="180" count="31" type="stmt"/>
+            <line falsecount="20" truecount="11" num="180" type="cond"/>
+            <line num="181" count="11" type="stmt"/>
+            <line falsecount="11" truecount="0" num="181" type="cond"/>
+            <line num="182" count="0" type="stmt"/>
+            <line num="185" count="31" type="stmt"/>
+            <line falsecount="29" truecount="2" num="185" type="cond"/>
+            <line num="186" count="2" type="stmt"/>
+            <line falsecount="2" truecount="0" num="186" type="cond"/>
+            <line num="187" count="0" type="stmt"/>
+            <line num="190" count="31" type="stmt"/>
+            <line falsecount="23" truecount="8" num="190" type="cond"/>
+            <line num="191" count="8" type="stmt"/>
+            <line falsecount="8" truecount="0" num="191" type="cond"/>
+            <line num="192" count="0" type="stmt"/>
+            <line num="196" count="66" type="stmt"/>
+            <line falsecount="31" truecount="35" num="196" type="cond"/>
+            <line num="197" count="35" type="stmt"/>
+            <line falsecount="23" truecount="12" num="197" type="cond"/>
+            <line num="198" count="12" type="stmt"/>
+            <line falsecount="10" truecount="2" num="198" type="cond"/>
+            <line num="199" count="2" type="stmt"/>
+            <line num="202" count="33" type="stmt"/>
+            <line falsecount="23" truecount="10" num="202" type="cond"/>
+            <line num="203" count="10" type="stmt"/>
+            <line falsecount="10" truecount="0" num="203" type="cond"/>
+            <line num="204" count="0" type="stmt"/>
+            <line num="207" count="33" type="stmt"/>
+            <line falsecount="28" truecount="5" num="207" type="cond"/>
+            <line num="208" count="5" type="stmt"/>
+            <line falsecount="5" truecount="0" num="208" type="cond"/>
+            <line num="209" count="0" type="stmt"/>
+            <line num="212" count="33" type="stmt"/>
+            <line falsecount="25" truecount="8" num="212" type="cond"/>
+            <line num="213" count="8" type="stmt"/>
+            <line falsecount="8" truecount="0" num="213" type="cond"/>
+            <line num="214" count="0" type="stmt"/>
+            <line num="218" count="64" type="stmt"/>
+            <line complexity="11" visibility="public" signature="finalPlace(char,String,int) : stash" num="222" count="64" type="method"/>
+            <line num="223" count="64" type="stmt"/>
+            <line num="224" count="64" type="stmt"/>
+            <line num="225" count="64" type="stmt"/>
+            <line num="227" count="64" type="stmt"/>
+            <line falsecount="33" truecount="31" num="227" type="cond"/>
+            <line num="228" count="31" type="stmt"/>
+            <line falsecount="21" truecount="10" num="228" type="cond"/>
+            <line num="229" count="10" type="stmt"/>
+            <line num="230" count="10" type="stmt"/>
+            <line num="231" count="10" type="stmt"/>
+            <line num="232" count="10" type="stmt"/>
+            <line num="234" count="31" type="stmt"/>
+            <line falsecount="20" truecount="11" num="234" type="cond"/>
+            <line num="235" count="11" type="stmt"/>
+            <line num="236" count="11" type="stmt"/>
+            <line num="237" count="11" type="stmt"/>
+            <line num="238" count="11" type="stmt"/>
+            <line num="240" count="31" type="stmt"/>
+            <line falsecount="23" truecount="8" num="240" type="cond"/>
+            <line num="241" count="8" type="stmt"/>
+            <line num="242" count="8" type="stmt"/>
+            <line num="243" count="8" type="stmt"/>
+            <line num="244" count="8" type="stmt"/>
+            <line num="246" count="31" type="stmt"/>
+            <line falsecount="29" truecount="2" num="246" type="cond"/>
+            <line num="247" count="2" type="stmt"/>
+            <line num="248" count="2" type="stmt"/>
+            <line num="249" count="2" type="stmt"/>
+            <line num="250" count="2" type="stmt"/>
+            <line num="253" count="64" type="stmt"/>
+            <line falsecount="31" truecount="33" num="253" type="cond"/>
+            <line num="254" count="33" type="stmt"/>
+            <line falsecount="23" truecount="10" num="254" type="cond"/>
+            <line num="255" count="10" type="stmt"/>
+            <line num="256" count="10" type="stmt"/>
+            <line num="257" count="10" type="stmt"/>
+            <line num="258" count="10" type="stmt"/>
+            <line num="259" count="10" type="stmt"/>
+            <line num="260" count="10" type="stmt"/>
+            <line num="262" count="33" type="stmt"/>
+            <line falsecount="23" truecount="10" num="262" type="cond"/>
+            <line num="263" count="10" type="stmt"/>
+            <line num="264" count="10" type="stmt"/>
+            <line num="265" count="10" type="stmt"/>
+            <line num="266" count="10" type="stmt"/>
+            <line num="267" count="10" type="stmt"/>
+            <line num="268" count="10" type="stmt"/>
+            <line num="270" count="33" type="stmt"/>
+            <line falsecount="28" truecount="5" num="270" type="cond"/>
+            <line num="271" count="5" type="stmt"/>
+            <line num="272" count="5" type="stmt"/>
+            <line num="273" count="5" type="stmt"/>
+            <line num="274" count="5" type="stmt"/>
+            <line num="275" count="5" type="stmt"/>
+            <line num="276" count="5" type="stmt"/>
+            <line num="278" count="33" type="stmt"/>
+            <line falsecount="25" truecount="8" num="278" type="cond"/>
+            <line num="279" count="8" type="stmt"/>
+            <line num="280" count="8" type="stmt"/>
+            <line num="281" count="8" type="stmt"/>
+            <line num="282" count="8" type="stmt"/>
+            <line num="283" count="8" type="stmt"/>
+            <line num="284" count="8" type="stmt"/>
+            <line num="287" count="64" type="stmt"/>
+            <line complexity="13" visibility="public" signature="getSuperCrazyPlaceCmd(Scanner,int,char) : boolean" num="290" count="83" type="method"/>
+            <line num="291" count="83" type="stmt"/>
+            <line num="292" count="83" type="stmt"/>
+            <line falsecount="82" truecount="1" num="292" type="cond"/>
+            <line num="293" count="1" type="stmt"/>
+            <line num="294" count="1" type="stmt"/>
+            <line num="296" count="82" type="stmt"/>
+            <line falsecount="81" truecount="1" num="296" type="cond"/>
+            <line num="297" count="1" type="stmt"/>
+            <line num="298" count="1" type="stmt"/>
+            <line num="300" count="81" type="stmt"/>
+            <line num="302" count="81" type="stmt"/>
+            <line falsecount="79" truecount="2" num="302" type="cond"/>
+            <line num="303" count="2" type="stmt"/>
+            <line num="304" count="2" type="stmt"/>
+            <line num="306" count="79" type="stmt"/>
+            <line falsecount="78" truecount="1" num="306" type="cond"/>
+            <line num="307" count="1" type="stmt"/>
+            <line num="308" count="1" type="stmt"/>
+            <line num="310" count="78" type="stmt"/>
+            <line num="311" count="78" type="stmt"/>
+            <line falsecount="61" truecount="17" num="311" type="cond"/>
+            <line num="312" count="17" type="stmt"/>
+            <line num="313" count="17" type="stmt"/>
+            <line num="315" count="61" type="stmt"/>
+            <line num="316" count="61" type="stmt"/>
+            <line falsecount="60" truecount="1" num="316" type="cond"/>
+            <line num="317" count="1" type="stmt"/>
+            <line num="318" count="1" type="stmt"/>
+            <line num="320" count="60" type="stmt"/>
+            <line num="321" count="60" type="stmt"/>
+            <line num="322" count="60" type="stmt"/>
+            <line complexity="11" visibility="public" signature="getHitCmd(Scanner,checkerBoard,boolean) : boolean" num="325" count="5174" type="method"/>
+            <line num="326" count="5174" type="stmt"/>
+            <line num="327" count="5174" type="stmt"/>
+            <line falsecount="5173" truecount="1" num="327" type="cond"/>
+            <line num="328" count="1" type="stmt"/>
+            <line num="329" count="1" type="stmt"/>
+            <line num="331" count="5173" type="stmt"/>
+            <line falsecount="5172" truecount="1" num="331" type="cond"/>
+            <line num="332" count="1" type="stmt"/>
+            <line num="333" count="1" type="stmt"/>
+            <line num="335" count="5172" type="stmt"/>
+            <line num="336" count="5172" type="stmt"/>
+            <line falsecount="5171" truecount="1" num="336" type="cond"/>
+            <line num="337" count="1" type="stmt"/>
+            <line num="338" count="1" type="stmt"/>
+            <line num="340" count="5171" type="stmt"/>
+            <line num="341" count="5171" type="stmt"/>
+            <line falsecount="4391" truecount="780" num="341" type="cond"/>
+            <line num="342" count="780" type="stmt"/>
+            <line falsecount="777" truecount="3" num="342" type="cond"/>
+            <line num="343" count="3" type="stmt"/>
+            <line num="345" count="777" type="stmt"/>
+            <line num="348" count="4391" type="stmt"/>
+            <line falsecount="4032" truecount="359" num="348" type="cond"/>
+            <line num="349" count="359" type="stmt"/>
+            <line num="350" count="359" type="stmt"/>
+            <line num="351" count="359" type="stmt"/>
+            <line num="352" count="359" type="stmt"/>
+            <line num="353" count="359" type="stmt"/>
+            <line falsecount="253" truecount="106" num="353" type="cond"/>
+            <line num="354" count="106" type="stmt"/>
+            <line num="356" count="253" type="stmt"/>
+            <line num="359" count="4032" type="stmt"/>
+            <line num="360" count="4032" type="stmt"/>
+            <line num="361" count="4032" type="stmt"/>
+            <line num="362" count="4032" type="stmt"/>
+            <line falsecount="3967" truecount="65" num="362" type="cond"/>
+            <line num="363" count="65" type="stmt"/>
+            <line num="365" count="3967" type="stmt"/>
+            <line num="368" count="5171" type="stmt"/>
+            <line complexity="6" visibility="public" signature="sonarCheckBlock(int,int,checkerBoard) : char" num="371" count="200" type="method"/>
+            <line num="372" count="200" type="stmt"/>
+            <line falsecount="183" truecount="17" num="372" type="cond"/>
+            <line num="373" count="17" type="stmt"/>
+            <line num="375" count="183" type="stmt"/>
+            <line num="376" count="183" type="stmt"/>
+            <line falsecount="164" truecount="19" num="376" type="cond"/>
+            <line num="377" count="19" type="stmt"/>
+            <line num="378" count="19" type="stmt"/>
+            <line num="380" count="164" type="stmt"/>
+            <line complexity="36" visibility="public" signature="moveStash(String,stash) : boolean" num="383" count="19" type="method"/>
+            <line num="384" count="19" type="stmt"/>
+            <line num="385" count="19" type="stmt"/>
+            <line num="386" count="19" type="stmt"/>
+            <line falsecount="17" truecount="2" num="386" type="cond"/>
+            <line num="387" count="2" type="stmt"/>
+            <line num="388" count="2" type="stmt"/>
+            <line num="390" count="17" type="stmt"/>
+            <line falsecount="15" truecount="2" num="390" type="cond"/>
+            <line num="391" count="2" type="stmt"/>
+            <line num="392" count="2" type="stmt"/>
+            <line num="394" count="15" type="stmt"/>
+            <line num="395" count="15" type="stmt"/>
+            <line falsecount="14" truecount="1" num="395" type="cond"/>
+            <line num="396" count="1" type="stmt"/>
+            <line num="397" count="1" type="stmt"/>
+            <line num="399" count="14" type="stmt"/>
+            <line num="400" count="14" type="stmt"/>
+            <line num="401" count="14" type="stmt"/>
+            <line num="402" count="14" type="stmt"/>
+            <line falsecount="7" truecount="7" num="402" type="cond"/>
+            <line num="403" count="7" type="stmt"/>
+            <line falsecount="6" truecount="1" num="403" type="cond"/>
+            <line num="404" count="1" type="stmt"/>
+            <line num="405" count="1" type="stmt"/>
+            <line num="407" count="6" type="stmt"/>
+            <line falsecount="5" truecount="1" num="407" type="cond"/>
+            <line num="408" count="1" type="stmt"/>
+            <line num="409" count="1" type="stmt"/>
+            <line num="412" count="5" type="stmt"/>
+            <line falsecount="4" truecount="1" num="412" type="cond"/>
+            <line num="413" count="1" type="stmt"/>
+            <line num="414" count="1" type="stmt"/>
+            <line num="416" count="4" type="stmt"/>
+            <line falsecount="2" truecount="8" num="416" type="cond"/>
+            <line num="417" count="8" type="stmt"/>
+            <line falsecount="4" truecount="4" num="417" type="cond"/>
+            <line num="418" count="4" type="stmt"/>
+            <line falsecount="3" truecount="1" num="418" type="cond"/>
+            <line num="419" count="1" type="stmt"/>
+            <line num="420" count="1" type="stmt"/>
+            <line num="423" count="7" type="stmt"/>
+            <line falsecount="3" truecount="4" num="423" type="cond"/>
+            <line num="424" count="4" type="stmt"/>
+            <line falsecount="3" truecount="1" num="424" type="cond"/>
+            <line num="425" count="1" type="stmt"/>
+            <line num="426" count="1" type="stmt"/>
+            <line num="430" count="2" type="stmt"/>
+            <line num="431" count="2" type="stmt"/>
+            <line falsecount="2" truecount="4" num="431" type="cond"/>
+            <line num="432" count="4" type="stmt"/>
+            <line num="433" count="4" type="stmt"/>
+            <line num="435" count="2" type="stmt"/>
+            <line falsecount="2" truecount="4" num="435" type="cond"/>
+            <line num="436" count="4" type="stmt"/>
+            <line falsecount="2" truecount="2" num="436" type="cond"/>
+            <line num="438" count="2" type="stmt"/>
+            <line num="439" count="2" type="stmt"/>
+            <line num="442" count="4" type="stmt"/>
+            <line falsecount="2" truecount="2" num="442" type="cond"/>
+            <line num="443" count="2" type="stmt"/>
+            <line num="444" count="2" type="stmt"/>
+            <line num="449" count="9" type="stmt"/>
+            <line falsecount="2" truecount="7" num="449" type="cond"/>
+            <line num="450" count="7" type="stmt"/>
+            <line falsecount="6" truecount="1" num="450" type="cond"/>
+            <line num="451" count="1" type="stmt"/>
+            <line num="452" count="1" type="stmt"/>
+            <line num="454" count="6" type="stmt"/>
+            <line num="455" count="6" type="stmt"/>
+            <line falsecount="5" truecount="1" num="455" type="cond"/>
+            <line num="456" count="1" type="stmt"/>
+            <line num="457" count="1" type="stmt"/>
+            <line num="459" count="5" type="stmt"/>
+            <line num="460" count="5" type="stmt"/>
+            <line falsecount="5" truecount="28" num="460" type="cond"/>
+            <line num="461" count="28" type="stmt"/>
+            <line num="462" count="28" type="stmt"/>
+            <line num="464" count="5" type="stmt"/>
+            <line num="465" count="5" type="stmt"/>
+            <line num="466" count="5" type="stmt"/>
+            <line falsecount="4" truecount="1" num="466" type="cond"/>
+            <line num="467" count="1" type="stmt"/>
+            <line num="469" count="4" type="stmt"/>
+            <line num="470" count="4" type="stmt"/>
+            <line falsecount="4" truecount="22" num="470" type="cond"/>
+            <line num="471" count="22" type="stmt"/>
+            <line num="474" count="6" type="stmt"/>
+            <line complexity="8" visibility="public" signature="getMoveCmd(Scanner,checkerBoard,boolean) : boolean" num="477" count="31" type="method"/>
+            <line num="479" count="31" type="stmt"/>
+            <line num="480" count="31" type="stmt"/>
+            <line num="481" count="31" type="stmt"/>
+            <line falsecount="30" truecount="1" num="481" type="cond"/>
+            <line num="482" count="1" type="stmt"/>
+            <line num="483" count="1" type="stmt"/>
+            <line num="485" count="30" type="stmt"/>
+            <line falsecount="27" truecount="3" num="485" type="cond"/>
+            <line num="486" count="3" type="stmt"/>
+            <line num="487" count="3" type="stmt"/>
+            <line num="489" count="27" type="stmt"/>
+            <line falsecount="26" truecount="1" num="489" type="cond"/>
+            <line num="490" count="1" type="stmt"/>
+            <line num="491" count="1" type="stmt"/>
+            <line num="493" count="26" type="stmt"/>
+            <line num="494" count="26" type="stmt"/>
+            <line num="495" count="26" type="stmt"/>
+            <line falsecount="19" truecount="7" num="495" type="cond"/>
+            <line num="496" count="7" type="stmt"/>
+            <line num="497" count="7" type="stmt"/>
+            <line num="499" count="19" type="stmt"/>
+            <line num="500" count="19" type="stmt"/>
+            <line falsecount="3" truecount="16" num="500" type="cond"/>
+            <line num="501" count="16" type="stmt"/>
+            <line num="502" count="16" type="stmt"/>
+            <line num="503" count="16" type="stmt"/>
+            <line num="505" count="19" type="stmt"/>
+            <line num="506" count="19" type="stmt"/>
+            <line num="507" count="19" type="stmt"/>
+            <line complexity="12" visibility="public" signature="getSonarCmd(Scanner,checkerBoard) : boolean" num="509" count="12" type="method"/>
+            <line num="510" count="12" type="stmt"/>
+            <line num="511" count="12" type="stmt"/>
+            <line num="512" count="12" type="stmt"/>
+            <line falsecount="10" truecount="2" num="512" type="cond"/>
+            <line num="513" count="2" type="stmt"/>
+            <line num="514" count="2" type="stmt"/>
+            <line num="516" count="10" type="stmt"/>
+            <line falsecount="9" truecount="1" num="516" type="cond"/>
+            <line num="517" count="1" type="stmt"/>
+            <line num="518" count="1" type="stmt"/>
+            <line num="520" count="9" type="stmt"/>
+            <line falsecount="8" truecount="1" num="520" type="cond"/>
+            <line num="521" count="1" type="stmt"/>
+            <line num="522" count="1" type="stmt"/>
+            <line num="524" count="8" type="stmt"/>
+            <line num="525" count="8" type="stmt"/>
+            <line num="526" count="8" type="stmt"/>
+            <line num="527" count="8" type="stmt"/>
+            <line num="528" count="8" type="stmt"/>
+            <line num="529" count="8" type="stmt"/>
+            <line num="530" count="8" type="stmt"/>
+            <line falsecount="8" truecount="56" num="530" type="cond"/>
+            <line num="531" count="56" type="stmt"/>
+            <line falsecount="56" truecount="200" num="531" type="cond"/>
+            <line num="533" count="200" type="stmt"/>
+            <line num="534" count="200" type="stmt"/>
+            <line falsecount="199" truecount="1" num="534" type="cond"/>
+            <line num="535" count="1" type="stmt"/>
+            <line num="537" count="200" type="stmt"/>
+            <line falsecount="191" truecount="9" num="537" type="cond"/>
+            <line num="538" count="9" type="stmt"/>
+            <line num="540" count="200" type="stmt"/>
+            <line falsecount="194" truecount="6" num="540" type="cond"/>
+            <line num="541" count="6" type="stmt"/>
+            <line num="543" count="200" type="stmt"/>
+            <line falsecount="197" truecount="3" num="543" type="cond"/>
+            <line num="544" count="3" type="stmt"/>
+            <line num="548" count="8" type="stmt"/>
+            <line num="549" count="8" type="stmt"/>
+            <line num="550" count="8" type="stmt"/>
+            <line num="551" count="8" type="stmt"/>
+            <line num="552" count="8" type="stmt"/>
+            <line num="553" count="8" type="stmt"/>
+            <line num="554" count="8" type="stmt"/>
+            <line complexity="23" visibility="public" signature="printBoard(checkerBoard) : void" num="556" count="265" type="method"/>
+            <line num="557" count="265" type="stmt"/>
+            <line num="558" count="265" type="stmt"/>
+            <line falsecount="265" truecount="5300" num="558" type="cond"/>
+            <line num="559" count="5300" type="stmt"/>
+            <line falsecount="5300" truecount="296800" num="559" type="cond"/>
+            <line num="560" count="296800" type="stmt"/>
+            <line falsecount="275600" truecount="21200" num="560" type="cond"/>
+            <line num="561" count="21200" type="stmt"/>
+            <line num="563" count="275600" type="stmt"/>
+            <line falsecount="180200" truecount="95400" num="563" type="cond"/>
+            <line num="564" count="95400" type="stmt"/>
+            <line num="567" count="180200" type="stmt"/>
+            <line falsecount="127200" truecount="53000" num="567" type="cond"/>
+            <line num="568" count="53000" type="stmt"/>
+            <line num="569" count="53000" type="stmt"/>
+            <line falsecount="50181" truecount="2819" num="569" type="cond"/>
+            <line num="570" count="2819" type="stmt"/>
+            <line num="572" count="50181" type="stmt"/>
+            <line falsecount="42841" truecount="7340" num="572" type="cond"/>
+            <line num="573" count="7340" type="stmt"/>
+            <line num="576" count="42841" type="stmt"/>
+            <line num="579" count="127200" type="stmt"/>
+            <line falsecount="74200" truecount="53000" num="579" type="cond"/>
+            <line num="580" count="53000" type="stmt"/>
+            <line num="581" count="53000" type="stmt"/>
+            <line num="582" count="53000" type="stmt"/>
+            <line falsecount="49791" truecount="3209" num="582" type="cond"/>
+            <line num="583" count="3209" type="stmt"/>
+            <line num="585" count="49791" type="stmt"/>
+            <line falsecount="48080" truecount="1711" num="585" type="cond"/>
+            <line num="586" count="1711" type="stmt"/>
+            <line num="589" count="48080" type="stmt"/>
+            <line num="593" count="74200" type="stmt"/>
+            <line num="597" count="5300" type="stmt"/>
+            <line num="599" count="265" type="stmt"/>
+         </file>
+         <file path="/home/zhm2go/hz202-hwk2-651/src/test/java/hz202/hwk2/AppTest.java" name="AppTest.java">
+            <metrics coveredelements="21" coveredconditionals="0" complexity="1" loc="37" coveredmethods="1" methods="1" elements="21" classes="1" ncloc="27" statements="20" conditionals="0" coveredstatements="20"/>
+            <class name="AppTest">
+               <metrics coveredelements="21" coveredconditionals="0" complexity="1" coveredmethods="1" methods="1" elements="21" statements="20" conditionals="0" coveredstatements="20"/>
+            </class>
+            <line complexity="1" visibility="package" signature="appHasAGreeting() : void" num="11" count="1" type="method"/>
+            <line num="12" count="1" type="stmt"/>
+            <line num="13" count="1" type="stmt"/>
+            <line num="14" count="1" type="stmt"/>
+            <line num="15" count="1" type="stmt"/>
+            <line num="17" count="1" type="stmt"/>
+            <line num="18" count="1" type="stmt"/>
+            <line num="19" count="1" type="stmt"/>
+            <line num="20" count="1" type="stmt"/>
+            <line num="23" count="1" type="stmt"/>
+            <line num="24" count="1" type="stmt"/>
+            <line num="25" count="1" type="stmt"/>
+            <line num="26" count="1" type="stmt"/>
+            <line num="27" count="1" type="stmt"/>
+            <line num="28" count="1" type="stmt"/>
+            <line num="29" count="1" type="stmt"/>
+            <line num="30" count="1" type="stmt"/>
+            <line num="31" count="1" type="stmt"/>
+            <line num="32" count="1" type="stmt"/>
+            <line num="33" count="1" type="stmt"/>
+            <line num="34" count="1" type="stmt"/>
+         </file>
+      </package>
+   </project>
+   <testproject name="hz202-hwk2-651" timestamp="1582257146705">
+      <metrics coveredelements="0" complexity="0" loc="0" methods="0" classes="0" statements="0" packages="0" coveredconditionals="0" coveredmethods="0" elements="0" ncloc="0" files="0" conditionals="0" coveredstatements="0"/>
+   </testproject>
+</coverage>

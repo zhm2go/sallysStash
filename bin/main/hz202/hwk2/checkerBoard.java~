@@ -1,0 +1,218 @@
+package hz202.hwk2;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class checkerBoard {
+  private int width = 10;
+  private int height = 20;
+  private ArrayList<stash> stashs;
+  private ArrayList<ArrayList<block>> allBlocks;
+
+  public checkerBoard() {
+    stashs = new ArrayList<stash>();
+    allBlocks = new ArrayList<ArrayList<block>>();
+    for (int h = 0; h <= 'T'; h++) {
+      allBlocks.add(new ArrayList<block>());
+    }
+    for (int i = 'A'; i <= 'T'; i++){
+      ///System.out.println(i);
+      ArrayList<block> rowBlocks = new ArrayList<block>();
+      for (int j = 0; j < 10; j++){
+        rowBlocks.add(new block());
+        ///System.out.println(j);
+      }
+      allBlocks.set(i, rowBlocks);
+    }
+  }
+
+  public ArrayList<ArrayList<block>> getAllBlocks(){
+    return allBlocks;
+  }
+  
+  public boolean getPlaceCmd(Scanner scan, int num, char color){
+    String cmd = scan.nextLine();
+    if(cmd.length() != 3){
+      System.out.println("Please type exact 3 characters:");
+      return false;
+    }
+    if(!Character.isLetter(cmd.charAt(0)) || !Character.isDigit(cmd.charAt(1)) || ! Character.isLetter(cmd.charAt(2))){
+       System.out.println("Please type 3 valid characters:");
+       return false;
+    }
+    cmd = cmd.toUpperCase();
+    ///System.out.println(cmd);
+    if(cmd.charAt(0) < 'A' || cmd.charAt(0) > 'T'){
+      System.out.println("Location out of checkboard!");
+      return false;
+    }
+    if(cmd.charAt(2) != 'V' && cmd.charAt(2) != 'H'){
+      System.out.println("Please type valid orientation character:");
+      return false;
+    }
+    if(cmd.charAt(2) == 'V' && cmd.charAt(0) + num - 1 > 'T'){
+      System.out.println("Location out of checkboard!");
+      return false;
+    }
+    int cmd2 = Character.getNumericValue(cmd.charAt(1));
+    if(cmd.charAt(2) == 'H' && cmd2 + num - 1 > 9){
+      System.out.println("Location out of checkboard!");
+      return false;
+    }
+    /*for (int i = 0; i < stashs.size(); i++){
+      stash Stash = stashs.get(i);
+      ArrayList<block> blocks = Stash.getBlocks();
+      for (int j = 0; j < blocks.size(); j++){
+        block checkblock = blocks.get(j);
+        ///System.out.println("x is "+checkblock.getX()+",y is "+checkblock.getY());
+        for (int k = 0; k < num; k++){
+          if(cmd.charAt(2) == 'V'){
+            if(cmd.charAt(0)+k==checkblock.getX() && cmd2 == checkblock.getY()){
+              System.out.println("Overlapped block!");
+              return false;
+            }
+          }
+          if(cmd.charAt(2) == 'H'){
+            if(cmd.charAt(0)==checkblock.getX() && cmd2+k == checkblock.getY()){
+              System.out.println("Overlapped block!");
+              return false;
+            }
+          }
+        }
+      }
+      }*/
+    for (int k = 0; k < num; k++){
+          if(cmd.charAt(2) == 'V'){
+            if(allBlocks.get(cmd.charAt(0)+k).get(cmd2).getOccupiedState()){
+              System.out.println("Overlapped block!");
+              return false;
+            }
+          }
+          if(cmd.charAt(2) == 'H'){
+            if(allBlocks.get(cmd.charAt(0)).get(cmd2+k).getOccupiedState()){
+              System.out.println("Overlapped block!");
+              return false;
+            }
+          }
+        }
+    stash new_stash = new stash(num, cmd, color);
+    for (int k = 0; k < num; k++){
+          if(cmd.charAt(2) == 'V'){
+            new_stash.addBlock(allBlocks.get(cmd.charAt(0)+k).get(cmd2));
+            allBlocks.get(cmd.charAt(0)+k).get(cmd2).setMaster(new_stash);
+          }
+          if(cmd.charAt(2) == 'H'){
+            new_stash.addBlock(allBlocks.get(cmd.charAt(0)).get(cmd2+k));
+            allBlocks.get(cmd.charAt(0)).get(cmd2+k).setMaster(new_stash);
+          }
+        }
+    stashs.add(new_stash);
+    return true;
+  }
+
+  public ArrayList<stash> getStashs() {
+    return stashs;
+  }
+
+  public boolean getHitCmd(Scanner scan, checkerBoard yourBoard, checkerBoard oppoBoard) {
+    String cmd = scan.nextLine();
+    if(cmd.length() != 2){
+      System.out.println("Please type exact 2 characters:");
+      return false;
+    }
+    if(!Character.isLetter(cmd.charAt(0)) || !Character.isDigit(cmd.charAt(1))){
+       System.out.println("Please type 2 valid characters:");
+       return false;
+    }
+    cmd = cmd.toUpperCase();
+    ///System.out.println(cmd);
+    if(cmd.charAt(0) < 'A' || cmd.charAt(0) > 'T'){
+      System.out.println("Location out of checkboard!");
+      return false;
+    }
+    int cmd2 = Character.getNumericValue(cmd.charAt(1));
+    if(oppoBoard.getAllBlocks().get(cmd.charAt(0)).get(cmd2).getHitState()){
+      ///block hit_block = oppoBoard.getAllBlocks().get(cmd.charAt(0)).get(cmd2);
+      ///hit_block.setHitState();
+      System.out.println("You have hit this stack before!");
+    }
+    else if(oppoBoard.getAllBlocks().get(cmd.charAt(0)).get(cmd2).getOccupiedState()){
+      block hit_block = oppoBoard.getAllBlocks().get(cmd.charAt(0)).get(cmd2);
+      hit_block.setHitState();
+      System.out.println("You found a stack!");
+    }
+    else {
+      block hit_block = oppoBoard.getAllBlocks().get(cmd.charAt(0)).get(cmd2);
+      hit_block.setMissState();
+      System.out.println("You missed!");
+    }
+    return true;
+  }
+    
+  /*public Character checkBlock(int x, int y) {
+    for (int i = 0; i < stashs.size(); i++){
+      stash Stash = stashs.get(i);
+      ArrayList<block> blocks = Stash.getBlocks();
+      for (int j = 0; j < blocks.size(); j++){
+        block checkblock = blocks.get(j);
+        ///System.out.println("x is "+checkblock.getX()+"and y is "+checkblock.getY());
+        if(checkblock.getX()==x && y==2*checkblock.getY()+2){
+          if(checkblock.getHitState()){
+            return '*';}
+          else{
+            return Stash.getColor();}
+        }
+      }
+    }
+    return null;
+    }*/
+  public void printBoard(checkerBoard oppoBoard){
+    ///System.out.println("________________________________________________________");
+    ///System.out.println("");
+    System.out.println("  0|1|2|3|4|5|6|7|8|9              0|1|2|3|4|5|6|7|8|9  ");
+    for (int i = 'A'; i <= 'T'; i++){
+      for (int j = 0; j < 4 * width + 16; j++){
+        if(j == 0 || j == 22 || j == 33 || j == 55){
+          System.out.print((char)i);
+        }
+        else if((j >= 3 && j <= 19 && j % 2 == 1) || (j >= 36 && j <= 52 && j % 2 == 0)){
+          System.out.print("|");
+        }
+        else {
+          if(j <= 20 && j >= 2){
+            block check_block = allBlocks.get(i).get((j - 2) / 2);
+            if(check_block.getOccupiedState() && check_block.getHitState()){
+              System.out.print('*');
+            }
+            else if(check_block.getOccupiedState() && !check_block.getHitState()){
+              System.out.print(check_block.getMaster().getColor());
+            }
+            else {
+              System.out.print(" ");
+            }
+          }
+          else if(j >= 35 && j <= 53){
+            ArrayList<ArrayList<block>> oppoBlocks = oppoBoard.getAllBlocks();
+            block check_block = oppoBlocks.get(i).get((j - 35) / 2);
+            if(check_block.getOccupiedState() && check_block.getHitState()){
+              System.out.print(check_block.getMaster().getColor());
+            }
+            else if(check_block.getMissState()){
+              System.out.print('M');
+            }
+            else {
+              System.out.print(" ");
+            }
+          }
+          else {
+            System.out.print(" ");
+          }
+        }
+      }
+      System.out.println("");
+    }
+    System.out.println("  0|1|2|3|4|5|6|7|8|9              0|1|2|3|4|5|6|7|8|9  ");
+    ///System.out.println("________________________________________________________"); 
+    
+  }
+}

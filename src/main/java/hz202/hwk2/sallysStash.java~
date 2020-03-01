@@ -1,0 +1,90 @@
+package hz202.hwk2;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class sallysStash {
+  private checkerBoard board_a;
+  private checkerBoard board_b;
+  private ArrayList<Character> stashSeq;
+  private HashMap<Character, String> colorNames;
+  private HashMap<Character, Integer> colorBlocks;
+
+  public sallysStash() {
+    stashSeq = new ArrayList<Character>() {{
+        add('G');
+        add('G');
+        add('P');
+        add('P');
+        add('P');
+        add('R');
+        add('R');
+        add('R');
+        add('B');
+        add('B');
+      }};
+    colorNames = new HashMap<Character, String>();
+    colorNames.put('G', "Green");
+    colorNames.put('P', "Purple");
+    colorNames.put('R', "Red");
+    colorNames.put('B', "Blue");
+    colorBlocks = new HashMap<Character, Integer>();
+    colorBlocks.put('G', 2);
+    colorBlocks.put('P', 3);
+    colorBlocks.put('R', 4);
+    colorBlocks.put('B', 6);
+  }
+
+  public checkerBoard playerPlacement(Scanner scan, String playerName, String oppoName, checkerBoard board, checkerBoard oppoBoard) {
+    ///scan = new Scanner(System.in);
+    ///checkerBoard board = new checkerBoard();
+    System.out.println("Player "+playerName+", you are going place Sally’s stash on the board. Make sure Player "+oppoName+" isn’t looking! For each stack, type the coordinate of the upper left side of the stash, followed by either H (for horizontal) or V (for vertical). For example, M4H would place a stack horizontally starting at M4 and going to the right. You have\n\t\t2 Green stacks that are 1x2\n\t\t3 Purple stacks that are 1x3\n\t\t3 Red stacks that are 1x4\n\t\t2 Blue stacks that are 1x6\n");
+    System.out.println("________________________________________________________");
+    System.out.println("Press any key if you are ready:");
+    scan.nextLine();
+    for (int round = 0; round < 2; round++){
+      System.out.println("________________________________________________________");
+      System.out.println("player "+playerName+"'s turn:");
+      System.out.println("     Your tree                     Player "+oppoName+"'s tree");
+      board.printBoard(oppoBoard);
+      int print_round = round + 1;
+      System.out.println("________________________________________________________");
+      System.out.println("Player "+playerName+", where do you want to place the stack "+print_round+": a "+colorNames.get(stashSeq.get(round))+" stack?");
+      boolean validCmd = board.getPlaceCmd(scan, colorBlocks.get(stashSeq.get(round)), stashSeq.get(round));
+      while(validCmd == false){
+        validCmd = board.getPlaceCmd(scan,  colorBlocks.get(stashSeq.get(round)), stashSeq.get(round));
+      }
+    }
+    System.out.println("________________________________________________________");
+    System.out.println("player "+playerName+"'s turn:");
+    System.out.println("     Your tree                     Player "+oppoName+"'s tree");
+    board.printBoard(oppoBoard);
+    System.out.println("________________________________________________________");
+    System.out.println("This is your whole placement.");
+    return board;
+  }
+
+  public void playerHit(Scanner scan, String playerName, String oppoName, checkerBoard board, checkerBoard oppoBoard) {
+    ///System.out.println("Player "+playerName+", you are going to hit Player"+oppoName+"'s Checkerboard.");
+    System.out.println("________________________________________________________");
+    System.out.println("Player "+playerName+", which location do you want to hit on Player "+oppoName+"'s checkerboard?");
+    boolean validCmd = board.getHitCmd(scan, oppoBoard);
+    while(!validCmd){
+      board.getHitCmd(scan, oppoBoard);
+    }
+    board.printBoard(oppoBoard);
+  }
+  public void startGame() {
+    board_a = new checkerBoard();
+    board_b = new checkerBoard();
+    Scanner scan = new Scanner(System.in);
+    this.playerPlacement(scan, "A", "B", board_a, board_b);
+    
+    System.out.println("Now switching to the other player. Press any key to continue:");
+    scan.nextLine();
+    this.playerPlacement(scan, "B", "A", board_b, board_a);
+
+    this.playerHit(scan, "A", "B", board_a, board_b);
+  }
+}

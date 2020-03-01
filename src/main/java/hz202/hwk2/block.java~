@@ -1,0 +1,55 @@
+package hz202.hwk2;
+
+public class block {
+  private int x;
+  private int y;
+  private boolean isOccupied;
+  private boolean isMiss;
+  private boolean isHit;
+  private stash master;
+  
+  public block() {
+    ///x = new_x;
+    ///y = new_y;
+    isOccupied = false;
+    isMiss = false;
+    isHit = false;
+    master = null;
+  }
+  
+  public void setLocation(int new_x, int new_y){
+    x = new_x;
+    y = new_y;
+  }
+
+  public void hit() {
+    isHit = true;
+  }
+
+  public int getX() {
+    return x;
+  }
+
+  public int getY() {
+    return y;
+  }
+
+  public boolean getOccupiedState() {
+    return isOccupied;
+  }
+  public boolean getMissState() {
+    return isMiss;
+  }
+  public boolean getHitState() {
+    return isHit;
+  }
+
+  public void setMaster(stash new_stash) {
+    master = new_stash;
+    isOccupied = true;
+  }
+
+  public stash getMaster() {
+    return master;
+  }
+}
